@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEOW</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        nav a:link, a:visited {
+            color: #fff;
+        }
+
+        nav a:active {
+            color: yellow;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-size: 1.1em;
+        }
+
+        p {
+            font-size: 0.9em;
+            line-height: 2.5;
+        }
+
+        li {
+            font-size: 1em;
+            line-height: 2;
+        }
+
+        #containger {
+            width: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: 300px;
+            background: url(images/main1.png) no-repeat center;
+            background-size: cover;
+        }
+
+        nav {
+            height: 50px;
+            background-color: #000;
+        }
+
+        #main-nav {
+            list-style: none;
+            padding: 10px;
+        }
+
+        #main-nav li {
+            display: inline-block;
+            color: #fff;
+            font-size: 0.6em;
+            margin: 5px 15px;
+        }
+
+        .photo {
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .photo img {
+            width: 100%;
+        }
+
+        .sale {
+            border: 1px solid #fff;
+            border-radius: 50%;
+        }
+
+        ol {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        footer {
+            background-color: #000;
+        }
+
+        footer p {
+            text-align: center;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <ul id="main-nav">
+                    <li><a href="#intro">MEOW소개</a></li>
+                    <li><a href="#best">베스트 상품</a></li>
+                    <li><a href="#sale">이달의 세일상품</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="intro">
+            <div class="page-title">
+                <h1>MEOW 소개</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="imgs/meow2.png" alt="moew">
+                </div>
+                <div class="text">
+                    <p>영업시간 : 평일 오전 10시 ~ 오후 6시</p>
+                    <p>점심시간 : 오후 1시 ~ 2시</p>
+                    <p>휴무 : 토/일/공휴일</p>
+                </div>
+            </div>
+        </section>
+        <section id="best">
+            <div class="page-title">
+                <h1>베스트 상품</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img src="imgs/best1.png" alt="그릭 남성 남자 여름 간절기 8부 셔츠 남방 아우터">
+                </div>
+                <div class="text">
+                    <p>＞ 그릭 남성 남자 여름 8부 셔츠 남방 아우터</p>
+                    <p>＞ 베이지, 차콜, 카키색상이 있으며 여름철<br>&nbsp;&nbsp;&nbsp;&nbsp;입기 적당한 아우터 느낌의 남성 셔츠.</p>
+                </div>
+                <div class="photo">
+                    <img src="imgs/best7.png" alt="남자 여름 미니멀 베이직 루즈핏 남친룩 심플 반팔티">
+                </div>
+                <div class="text">
+                    <p>＞ 남자 여름 미니멀 베이직 루즈핏 심플 반팔티</p>
+                    <p>＞ 블랙, 화이트, 베이지, 민트색상이 있으며<br>&nbsp;&nbsp;&nbsp; 두께감이 얇아 여름에도 입기 편한 반팔티.</p>
+                </div>
+                <div class="photo">
+                    <img src="imgs/best9.png" alt="남자 오버핏 무지 심플 캐주얼 반팔셔츠">
+                </div>
+                <div class="text">
+                    <p>＞ 남자 오버핏 무지 심플 캐주얼 반팔셔츠</p>
+                    <p>＞ 블랙, 화이트, 옐로우, 블루, 네이비색상과<br>&nbsp;&nbsp;&nbsp; 패션용으로 꾸미기 좋은 반팔셔츠.</p>
+                </div>
+            </div>
+        </section>
+        <section id="sale">
+            <div class="page-title">
+                <h1>이달의 세일상품</h1>
+            </div>
+            <div class="content">
+                <div class="photo">
+                    <img class="sale" src="imgs/바지2.png" alt="슬랙스 남성긴바지">
+                </div>
+                <div class="text">
+                    <h2>슬랙스 남성긴바지</h2>
+                    <ol>
+                        <li>두께감이 얇아 잠옷이나 패션바지로도 사용이 가능한 바지.</li>
+                        <li>신축성 또한 어느정도 있어 쉽게 늘어나거나 찢어지지 않는다.</li>
+                        <li>20,000원이지만 지금 바로 10,000만원에 살 수 있는 바지!!</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>주식회사냥이</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>주식회사냥이</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/mypage.css">
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+
+</head>
+<body>
+    <!--건너뛰기 링크 시작-->
+    <div id="skipNav">
+        <p><a href="#contentsArea">본문 바로가기</a></p>
+    </div>
+    <!--건너뛰기 링크 종료-->
+
+    <!--헤더 top 영역 시작-->
+    <div id="header">
+        <div id="header01">
+            <!--홈버튼 시작-->
+            <div class="-frame">
+                <div class="goHome_wrap">
+                    <div class="goHome">
+                        <a href="index.html"><i class="xi-home"></i></a>
+                    </div>
+                </div>
+                <div class="goHome_move"></div>
+                <!--홈버튼 종료-->
+                <!--상단 좌측 영역 시작-->
+                <ul class="topMenu_left">
+                    <li><a href="#" target="_blank"><i class="xi-star-o"></i>즐겨찾기</a></li>
+                    <li><a href="#" target="_blank"><i class="xi-bookmark-o"></i>바로가기</a></li>
+                </ul>
+                <!--sns 아이콘 시작-->
+                <div class="sns_icon">
+                    <ul>
+                        <li><a href="http://instargram.com" class="insta" target="_blank"><i class="xi-instagram"></i></a></li>
+                        <li><a href="http://facebook.com" class="fasebook" target="_blank"><i class="xi-facebook"></i></a></li>
+                    </ul>
+                </div>
+                <!--sns 아이콘 종료-->
+                <!--상단 좌측 영역 종료-->
+
+                <!--상단 우측 영역 시작-->
+                <div class="topMenu_search">
+                    <form method="get" target="_self" name="search">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <input id="keyword" name="search" value="" type="text">
+                            <input type="image" src="images/search_btn2.png" alt="검색">
+                        </fieldset>
+                    </form>
+                </div>
+                <ul class="topMenu_right">
+                    <li><a href="login.html">로그인</a></li>
+                    <li><a href="join.html">회원가입</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="mypage.html" class="down"><strong>마이페이지</strong></a>
+                        <ul>
+                            <li><a href="#">주문조회</a></li>
+                            <li><a href="#">장바구니</a></li>
+                            <li><a href="#">관심상품</a></li>
+                            <li><a href="#">쿠폰조회</a></li>
+                            <li><a href="#">회원정보</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="down">커뮤니티</a>
+                        <ul>
+                            <li><a href="#">문의사항</a></li>
+                            <li><a href="#">리뷰</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <!--상단 우측 영역 종료-->
+            </div>
+        </div>
+        <div class="divClear"></div>
+        <!--헤더 top 영역 종료-->
+        <!--로고 영역 시작-->
+        <div id="frame">
+            <div class="logo_img">
+                <a href="index.html">
+                    <img src="images/meow2.png" alt="logo">
+                </a>
+            </div>
+        </div>
+        <!--로고 영역 종료-->
+
+        <!--카테고리 영역 시작-->
+        <div id="menubar">
+            <div class="wrap -frame">
+                <div id="AllMenu" class="category_full">
+                    <p>
+                        <!--카테고리 전체보기 버튼-->
+                    </p>
+                    <ul class="mainmenu">
+                        <li><a href="#" class="Menu1">NEW 10%</a></li>
+                        <li><a href="#" class="Menu1">BEST 100</a></li>
+                        <li><a href="#" class="Menu1">OUTER</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">코트</a></li>
+                                    <li><a href="#">패딩</a></li>
+                                    <li><a href="#">자켓</a></li>
+                                    <li><a href="#">니트&가디건</a></li>
+                                    <li><a href="#">후드&집업</a></li>
+                                    <li><a href="#">수트&블레이져</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">SHIRT</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">베이직셔츠</a></li>
+                                    <li><a href="#">체크셔츠</a></li>
+                                    <li><a href="#">오버핏셔츠</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">TOP</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">반팔&나시&7부티</a></li>
+                                    <li><a href="#">긴팔티</a></li>
+                                    <li><a href="#">맨투맨&후드티</a></li>
+                                    <li><a href="#">오버핏티</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">PANTS</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">슬랙스</a></li>
+                                    <li><a href="#">면바지</a></li>
+                                    <li><a href="#">청바지</a></li>
+                                    <li><a href="#">반바지</a></li>
+                                    <li><a href="#">트레이닝바지</a></li>
+                                    <li><a href="#">벤딩바지</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">SHOES</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">스니커즈</a></li>
+                                    <li><a href="#">구두</a></li>
+                                    <li><a href="#">워커/부츠</a></li>
+                                    <li><a href="#">슬리퍼&샌들</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">ACC</a>
+                            <div class="submenu">
+                                <ul class="Menu2">
+                                    <li><a href="#">양말</a></li>
+                                    <li><a href="#">벨트</a></li>
+                                    <li><a href="#">가방</a></li>
+                                    <li><a href="#">안경&선글라스</a></li>
+                                    <li><a href="#">모자</a></li>
+                                    <li><a href="#">팔찌&반지&목걸이</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="#" class="Menu1">SALE</a></li>
+                    </ul>
+                </div>
+
+                <!--전체보기 메뉴-->
+                <div id="AllMenuView" style="display: none;">
+                    <div class="all_menuList">
+                        <ul>
+                            <li class="tit"><a href="#">TOP</a></li>
+                            <li><a href="#">반팔&나시&7부티</a></li>
+                            <li><a href="#">긴팔티</a></li>
+                            <li><a href="#">맨투맨&후드티</a></li>
+                            <li><a href="#">오버핏티</a></li>
+                            <li class="tit2"><a href="#">SHIRT</a></li>
+                            <li><a href="#">베이직셔츠</a></li>
+                            <li><a href="#">체크셔츠</a></li>
+                            <li><a href="#">오버핏셔츠</a></li>
+                        </ul>
+                        <ul>
+                            <li class="tit"><a href="#">PANTS</a></li>
+                            <li><a href="#">슬랙스</a></li>
+                            <li><a href="#">면바지</a></li>
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">반바지</a></li>
+                            <li><a href="#">트레이닝바지</a></li>
+                            <li><a href="#">벤딩바지</a></li>
+                        </ul>
+                        <ul>
+                            <li class="tit"><a href="#">OUTER</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">패딩</a></li>
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">니트&가디건</a></li>
+                            <li><a href="#">후드&집업</a></li>
+                            <li><a href="#">수트&블레이져</a></li>
+                        </ul>
+                        <ul>
+                            <li class="tit"><a href="#">SHOES</a></li>
+                            <li><a href="#">스니커즈</a></li>
+                            <li><a href="#">구두</a></li>
+                            <li><a href="#">워커/부츠</a></li>
+                            <li><a href="#">슬리퍼&샌들</a></li>
+                        </ul>
+                        <ul>
+                            <li class="tit"><a href="#">ACC</a></li>
+                            <li><a href="#">양말</a></li>
+                            <li><a href="#">벨트</a></li>
+                            <li><a href="#">가방</a></li>
+                            <li><a href="#">안경&선글라스</a></li>
+                            <li><a href="#">모자</a></li>
+                            <li><a href="#">팔찌&반지&목걸이</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--카테고리 영역 종료-->
+
+        <!--my page 영역 시작-->
+        <div id="my_Page">
+            <div id="container">
+                <div class="contents">
+                    <div class="contents01">
+                        <ol>
+                            <li><a href="index.html">홈</a></li>
+                            <li>&gt; <strong>마이메이지</strong></li>
+                        </ol>
+                    </div>
+                    <div class="my_title">
+                        <h2>MY PAGE</h2>
+                    </div>
+                    <div class="myshop">
+                        <ul>
+                            <li>
+                                <span class="title">가용적립금</span>
+                                <strong class="data">&nbsp;</strong>
+                                <a href="#" class="btnga">조회</a>
+                            </li>
+                            <li>
+                                <span class="title">총적립금</span>
+                                <strong class="data"></strong>
+                            </li>
+                            <li>
+                                <span class="title">사용적립금</span>
+                                <strong class="data"></strong>
+                            </li>
+                            <li>
+                                <span class="title">총주문</span>
+                                <strong class="data">(회)</strong>
+                            </li>
+                            <li>
+                                <span class="title">보유쿠폰</span>
+                                <strong class="data">
+                                    <span>개</span>
+                                </strong>
+                                <a href="#" class="btnga">조회</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="myshop_status">
+                        <div class="status_title">
+                            <h2>나의 주문처리 현황<span>(최근 <strong>3개월</strong> 기준)</span></h2>
+                            
+                        </div>
+                        <div class="status">
+                            <ul class="order">
+                                <li>
+                                    <span>입금전</span>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                                <li>
+                                    <span>배송준비중</span>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                                <li>
+                                    <span>배송중</span>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                                <li>
+                                    <span>배송완료</span>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                            </ul>
+                            <ul class="cs">
+                                <li>
+                                    <span class="jum"></span>
+                                    <strong>취소 :</strong>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                                <li>
+                                    <span class="jum"></span>
+                                    <strong>교환 :</strong>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                                <li>
+                                    <span class="jum"></span>
+                                    <strong>반품 :</strong>
+                                    <a href="#" class="count"><strong>0</strong></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!--my page 영역 종료-->
+    </div>
+        
+
+    <!--footer 영역 시작-->
+    <footer>
+        <!--footer top 메뉴-->
+        <div class="footer_wrap">
+            <div class="footer_top">
+                <div class="footer_public">
+                    <ul>
+                        <li class="top_one"><a href="#">회사소개</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이용안내</a></li>
+                        <li><a href="#"><strong>개인정보취급방침</strong></a></li>
+                        <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+                <!--footer top 메뉴-->
+
+            <!--전화번호-->
+            <div class="footer_public">
+                <div class="footer_customer _oh">
+                    <h4>CUSTOMER CENTER</h4>
+                    <ul>
+                        <li class="phone">
+                            <img src="images/phone_ico.png" alt=""> 1666-6666
+                        </li>
+                        <li>
+                            <strong>평일</strong>
+                            <span>오전 10:00 ~ 오후 06:00</span>
+                        </li>
+                        <li>
+                            <strong>점심</strong>
+                            <span>오후 01:00 ~ 오후 02:00</span>
+                        </li>
+                        <li>
+                            <strong>토/일/공휴일 => 휴무</strong>
+                        </li>
+                        <li>
+                            <strong>고객센터</strong>
+                            <span>1666-6666</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--전화번호-->
+
+            <!--은행-->
+            <div class="footer_public">
+                <div class="footer_bank _oh">
+                    <h4>BANK INFO</h4>
+                    <ul>
+                        <li>
+                            <strong>예금주</strong>
+                            <span>(주)냥냥컴퍼니</span>
+                        </li>
+                        <li>&nbsp;</li>
+                        <li>
+                            신한 <span>110-123-123456</span>
+                        </li>
+                        <li>
+                            농협 <span>301-0123-1234-11</span>
+                        </li>
+                        <li>
+                            국민 <span>123456-01-123456</span>
+                        </li>
+                        <li>
+                            기업 <span>123-123456-01-123</span>
+                        </li>
+                        <li>
+                            우리 <span>1234-123-123456</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!--은행-->
+
+            <!--FAVORITE MENU-->
+            <div class="footer_public">
+                <div class="footer_menu">
+                    <h4>FAVORITE MENU</h4>
+                    <div>
+                        <a class="footer_log footer_item" href="login.html">로그인</a>
+                        <a class="footer_log footer_join footer_item" href="join.html">회원가입</a>
+                        <a class="footer_item" href="#">관심상품</a>
+                        <a class="footer_item" href="#">장바구니</a>
+                        <a class="footer_item" href="#">주문조회</a>
+                        <a class="footer_item" href="mypage.html">마이페이지</a>
+                    </div>
+                </div>
+            </div>
+            <div class="divClear"></div>
+            <div class="line"></div>
+            <!--회사 정보-->
+            <div class="footer_bottom">
+                <div class="footer_public ">
+                    <div class="footer_company">
+                        <ul>
+                            <li>
+                                <strong>상호명 :</strong>
+                                <span>주식회사냥이</span>
+                                <strong>대표자명 :</strong>
+                                <span>박상범</span>
+                                <strong>사업자 등록번호 :</strong>
+                                <span>032-1234-5678</span>
+                                <span class="footer_company_biz">
+                                    <a href="#">사업자확인</a>
+                                </span>
+                            </li>
+                            <li>
+                                <strong>통신판매번호 :</strong>
+                                <span>제 2018-인천-022222호</span>
+                                <strong>소재지 :</strong>
+                                <span>15468 인천시 서구 xx동 124-4</span>
+                                <strong>대표전화 :</strong>
+                                <span>1666-6666</span>
+                            </li>
+                            <li>
+                                <strong>개인정보관리책임자 :</strong>
+                                <span>박상범</span>
+                                <strong>이메일 :</strong>
+                                <span>
+                                    <a href="#" class="footer_mail">xxxxx@naver.com</a></span>
+                            </li>
+                            <li>
+                                <span>COPYRIGHT ⓒ <strong>주식회사냥이</strong>ALL RIGHTS RESERVED</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!--회사 정보-->
+        </div>
+    </footer>
+    <!--footer 영역 종료-->
+</body>
+</html>
